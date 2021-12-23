@@ -1,0 +1,11 @@
+steps:
+- name: Mirror the Github organization repos to Gitee.
+  uses: Yikun/hub-mirror-action@master
+  with:
+    src: github/chiro2001
+    dst: gitee/chiro2001
+    dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+    dst_token: ${{ secrets.GITEE_TOKEN }}
+    account_type: user
+    black_list: "vscode-extension-samples,YesPlayMusic,qemu,Naive_Bayes,fruitionsite,proxy_pool,xv6-riscv-fall19,hitsz-radar,iverilog-vscode,mirror-web,wavedrom,HLS-Tiny-Tutorials,yolov3,EBAZ4205,ILI9488_STM32,HITsz-daily-report-,arduino-web-oscilloscope,realXiaoice,notion2md,HITSZ_RMVISION_2021,FPGA_DEMO,ScopeMCU,FPGA_DEMO,HITsz-SiXiu-materials,epaper_price_tag_mod,2020-OS,ebf_AD9280_9708_code_altera_ep4ce10,VSC-ASMtasks,HIT-OSLab,Architecture_Course,RP_Infantry_Plus,live2d_demo,cors-anywhere,dma_ex_fft,cockybook,niemingzhao.github.io,main,hexo-theme-mdui,PynqDocs,2019-OS,uboot-stm32h743_eth,pytorch-yolo-v3,Ethernet-design-verilog,string2hid,stm32h743-linux-eth-usb,Login,tutorials,ChatOnline,Keras-GAN,HLx_Examples,Mind-Map,quickdraw-dataset,DCGAN-tensorflow,dhcpserver,teng-koa,AndroidScreenOnAndOff,osask-linux,ganhacks,vue-drawer,ptpv2d,DrawerLayout-SwipeRefreshLayout-Systembartint,WeRoBot-SAE-demobusiness-game"
+    timeout: 10m
